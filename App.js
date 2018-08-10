@@ -6,7 +6,7 @@ import AlbumList from './src/components/AlbumList'
 export default class App extends React.Component {
   render() {
     return (
-      <View>
+      <View style={styles.background}>
         <Header headerText={'Albums'}/>
         <AlbumList />
       </View>
@@ -21,4 +21,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  background: {
+    backgroundColor: '#0097a7',
+    flex:1
+  }
 });
